@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #333;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(image/banner2.jpg) center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: #333;
+    padding: 0.3rem;
+}
+.navbar-brand{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+}
+.navbar-nav{
+    font-size: 1.2rem;
+    padding: 0.3rem 0 0.3rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in ;
+    -moz-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    justify-content: space-evenly;
+}
+.navbar-nav a:hover{
+    font-size: 30px;
+    color: aqua; 
+}
+
+.banner{
+    text-align: center;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.banner-title{
+    font-size: 50px;
+    line-height: 1,2;
+    letter-spacing: 4px;
+}
+.banner-title span{
+    color:aqua;
+}
+.Pop{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 1.50rem 0.15rem ;
+    letter-spacing: 2px;
+}
+.banner form{
+   background: white;
+   border-radius: 1rem;
+   margin-left: 15%;
+   width: 70%;
+   padding: 0.5rem 1rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.search-input{
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    padding: 0.1rem 0;   
+    outline: 0;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.host{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+    
+}
+.host .heading {
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 6px;
+}
+.host .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 1%;
+    text-align: center;
+
+}
+.host .heading h3 span{
+    color: aqua;
+    font-weight: 400;
+}
+
+.host .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.host .box .column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.host .box .column img{
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+footer{
+    background-color: lightgray;
+    background: cover;
+    color: #333;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: bolder;
+}
+.social-media{
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.social-media a{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display:inline-block;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.social-media a:hover{
+    background: #fff;
+    color: blueviolet;
+}
+.foot span{
+    color: black;
+    font-weight: 100;
+}
+.copy p {
+    color: #333;
+    font-size: medium;
+}
+
+/*Media Queries */ 
+@media screen and (min-width: 600px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .banner-title{
+        font-size: 5rem;
+    }
+
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 768px){
+    .host .box{
+        flex-direction: column;
+    }
+
+    .host .box .column{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .host .heading{
+        width: 100%;
+    }
+
+    .host .heading h3{
+        font-size: 2rem;
+    }
+}
